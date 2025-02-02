@@ -1,1 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #05445E, #4e9a9a); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
+#quiz-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Makes button stretch across the container */
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Active (when clicked) effect */
+button:active {
+    transform: scale(0.98);
+    background-color: #388e3c;
+}
+
+/* Focus effect (when focused) */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(72, 155, 107, 0.5);
+}
+
+/* Disabled button effect */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap for better spacing between options */
+    margin-bottom: 20px;
+}
+
+#options-container button {
+    background-color: #f0f0f0; /* Light background for option buttons */
+    color: #333; /* Darker text for better readability */
+    padding: 12px 20px;
+    border: 2px solid #ccc; /* Light border around options */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    width: 100%;
+}
+
+/* Hover effect for option buttons */
+#options-container button:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly bigger shadow on hover */
+}
+
+/* Active (when clicked) effect for option buttons */
+#options-container button:active {
+    transform: scale(0.98);
+    background-color: #ccc;
+}
+
+/* Focus effect for option buttons */
+#options-container button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(72, 155, 107, 0.5);
+}
